@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addObyavlenie">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="800dp"
+        android:layout_height="1628dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555"
+        app:srcCompat="@drawable/__2_" />
+
+    <ScrollView
+        android:layout_width="351dp"
+        android:layout_height="668dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="введите тип недвижимости (вторичная, участок/дом)"
+                android:textColor="#0B0505"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/tipNedvizh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="#050505" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="количество комнат(если квартира)"
+                android:textColor="#040303"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/kolvoKomnat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="#070707" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="укажите вид сделки(продажа/аренда)"
+                android:textColor="#0D0C0C"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/vidSdelki"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="#050303" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="укажите площадь недвижимости"
+                android:textColor="#070202"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/ploshadNedvizh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="#090909" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="опишите недвижимость"
+                android:textColor="#050505"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/opisanie"
+                android:layout_width="match_parent"
+                android:layout_height="458dp"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="#0B0B0B" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
